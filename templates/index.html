@@ -1,1 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша история</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
 
+    <!-- Фоновые эффекты -->
+    <div class="bg-texture"></div>
+    <div class="vignette"></div>
+    <div id="hearts-container"></div>
+
+    <!-- Экран 1: Приветствие -->
+    <section class="scroll-section intro-section">
+        <h1 class="intro-title">Моей любимой<br>девушке</h1>
+        <div class="scroll-indicator">
+            <p>Листай вниз, чтобы вспомнить...</p>
+            <div class="arrow-down">↓</div>
+        </div>
+    </section>
+
+    <!-- БЛОКИ С 10 СОБЫТИЯМИ -->
+
+    <!-- Событие 1 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content left">
+            <div class="date-badge">1 апреля 2025</div>
+            <h2 class="moment-title">Наше начало</h2>
+            <p class="moment-text">Помню как мы стояли неловко обнимали друг друга когда начали встречаться</p>
+            <img src="{{ url_for('static', filename='photo1.jpg') }}" alt="Фото 1" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 2 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content right">
+            <div class="date-badge">7 октября 2025</div>
+            <h2 class="moment-title">Улетела в Дубай без меня(</h2>
+            <p class="moment-text">Когда ты улетела я скучал по тебе сильно-сильно</p>
+            <img src="{{ url_for('static', filename='photo2.jpg') }}" alt="Фото 2" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 3 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content left">
+            <div class="date-badge">15 октября 2025</div>
+            <h2 class="moment-title">Незабываемые дни в школе</h2>
+            <p class="moment-text">Помню как сидали любили друг друга, ругались маленько и угарали с Леши, Маши и других...</p>
+            <img src="{{ url_for('static', filename='photo3.jpg') }}" alt="Фото 3" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 4 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content right">
+            <div class="date-badge">6 ноября 2025</div>
+            <h2 class="moment-title">Играли в майнкрафт</h2>
+            <p class="moment-text">Помню как умолял тебя поиграть со мной в майнкрафт</p>
+            <img src="{{ url_for('static', filename='photo4.jpg') }}" alt="Фото 4" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 5 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content left">
+            <div class="date-badge">1 января 2026</div>
+            <h2 class="moment-title">Наш совместный новый год</h2>
+            <p class="moment-text">Очень хорошо покатались на катке в ВДНХ живые эмоции и радость))</p>
+            <img src="{{ url_for('static', filename='photo5.jpg') }}" alt="Фото 5" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 6 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content right">
+            <div class="date-badge">Все лето</div>
+            <h2 class="moment-title">Работаем вместе</h2>
+            <p class="moment-text">Каждое лето работали вместе и все проебывали))</p>
+            <img src="{{ url_for('static', filename='photo6.jpg') }}" alt="Фото 6" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 7 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content left">
+            <div class="date-badge">1 сентября 2026</div>
+            <h2 class="moment-title">Колледж</h2>
+            <p class="moment-text">Ебаный колледж отдалил нас...</p>
+            <img src="{{ url_for('static', filename='photo7.jpg') }}" alt="Фото 7" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 8 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content right">
+            <div class="date-badge">10 сентября 2026</div>
+            <h2 class="moment-title">День рождение моей любимой</h2>
+            <p class="moment-text">Прости что не смогу присутвовать с тобой...</p>
+            <img src="{{ url_for('static', filename='photo8.jpg') }}" alt="Фото 8" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Событие 9 -->
+    <section class="scroll-section timeline-section">
+        <div class="timeline-content left">
+            <div class="date-badge">Октябрь</div>
+            <h2 class="moment-title">Учимся в разных колледжах но все равно вместе</h2>
+            <p class="moment-text">Даже если учимся в разных колледжах ты находишь время встретиться со мной))</p>
+            <img src="{{ url_for('static', filename='photo9.jpg') }}" alt="Фото 9" class="moment-photo" onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- Экран 5: Финал и кнопка -->
+    <section class="scroll-section final-section">
+        <h2 class="intro-title" style="font-size: 2.5rem;">У меня для тебя кое-что есть...</h2>
+        <button class="gift-button" onclick="showEnvelope()">Получить подарок</button>
+    </section>
+
+    <!-- ЭКРАН 6: Конверт -->
+    <div class="envelope-section" id="envelopeSection">
+        <div class="scene">
+            <div class="envelope-wrapper" id="envelope" onclick="openEnvelope()">
+                <div class="envelope-back"></div>
+                <div class="flap"><div class="gold-foil"></div></div>
+
+                <div class="letter" id="letter">
+                    <div class="paper-texture"></div>
+                    <div class="letter-content">
+                        <h2 class="letter-title">Моей любимой</h2>
+                        <div class="divider"></div>
+                        <p class="letter-text">
+                            Здесь будет твое красивое поздравление. <br><br>
+                            Желаю тебе море счастья, улыбок и вдохновения каждый день!
+                        </p>
+                        <div class="polaroid">
+                            <img src="{{ url_for('static', filename='photo.jpg') }}" alt="Фото" onerror="this.parentElement.style.display='none'">
+                        </div>
+                        <button class="quiz-start-btn" onclick="startQuiz(event)">Пройти опрос любви</button>
+                    </div>
+                </div>
+
+                <div class="envelope-front">
+                    <div class="inner-shadow"></div>
+                    <div class="wax-seal"><span>❤</span></div>
+                </div>
+                <div class="click-hint" id="hint">Нажми, чтобы открыть</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ЭКРАН 7: Опросник -->
+    <div class="quiz-section" id="quizSection">
+        <div class="quiz-card">
+            <div class="quiz-progress" id="quizProgress">Вопрос 1 из 10</div>
+            <h2 class="quiz-question" id="quizQuestion">Текст вопроса</h2>
+            <div class="quiz-options" id="quizOptions"></div>
+        </div>
+    </div>
+
+    <!-- ЭКРАН 8: Результат -->
+    <div class="result-section" id="resultSection">
+        <div class="result-card">
+            <h2 class="result-title" id="resultTitle">Результат</h2>
+            <p class="result-text" id="resultText">Текст результата</p>
+            <button class="restart-btn" onclick="showTimerSection()">Увидеть нашу статистику</button>
+        </div>
+    </div>
+
+    <!-- ЭКРАН 9: ТАЙМЕР ЛЮБВИ -->
+    <div class="timer-section" id="timerSection">
+        <h2 class="intro-title" style="font-size: 2.5rem; margin-bottom: 10px;">Мы вместе уже...</h2>
+
+        <div class="timer-container">
+            <div class="timer-box">
+                <span class="timer-number" id="days">0</span>
+                <span class="timer-label">Дней</span>
+            </div>
+            <div class="timer-box">
+                <span class="timer-number" id="hours">0</span>
+                <span class="timer-label">Часов</span>
+            </div>
+            <div class="timer-box">
+                <span class="timer-number" id="minutes">0</span>
+                <span class="timer-label">Минут</span>
+            </div>
+            <div class="timer-box">
+                <span class="timer-number" id="seconds">0</span>
+                <span class="timer-label">Секунд</span>
+            </div>
+        </div>
+
+        <p class="intro-subtitle" style="margin-top: 30px;">...и каждая секунда бесценна</p>
+    </div>
+
+    <script>
+        // === АНИМАЦИЯ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ ===
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.timeline-content').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // === ПЕРЕХОД К КОНВЕРТУ ===
+        function showEnvelope() {
+            const envelopeSection = document.getElementById('envelopeSection');
+            document.body.style.overflow = 'hidden';
+            envelopeSection.style.display = 'flex';
+            setTimeout(() => envelopeSection.classList.add('show'), 50);
+        }
+
+        function openEnvelope() {
+            const envelope = document.getElementById('envelope');
+            const hint = document.getElementById('hint');
+            if (envelope.classList.contains('open')) return;
+            if (navigator.vibrate) navigator.vibrate(50);
+            envelope.classList.add('open');
+            hint.style.display = 'none';
+            setTimeout(() => createFloatingElement('heart'), 500);
+        }
+
+        function startQuiz(e) {
+            e.stopPropagation();
+            const envelopeSection = document.getElementById('envelopeSection');
+            const quizSection = document.getElementById('quizSection');
+
+            envelopeSection.style.opacity = '0';
+            setTimeout(() => {
+                envelopeSection.style.display = 'none';
+                quizSection.style.display = 'flex';
+                setTimeout(() => quizSection.classList.add('show'), 50);
+                renderQuestion();
+            }, 800);
+        }
+
+        // === ЛОГИКА ОПРОСНИКА ===
+        const questions = [
+            { q: "Сколько мы встречаемся?", options: ["1 год", "2 года и 6 месяцев", "1 год и 6 месяцев"], correct: 2 },
+            { q: "Сколько мне лет?", options: ["14 лет", "17 лет", "20 лет"], correct: 1 },
+            { q: "Что я люблю?", options: ["Суши и роллы", "Спагетти", "Плов"], correct: 0 },
+            { q: "Что для меня важнее?", options: ["Любовь", "Деньги", "Успех"], correct: 0 },
+            { q: "Что я хочу больше всего?", options: ["Машину", "Холодильник", "Трактор"], correct: 0 },
+            { q: "Какое у нас значимое слово в отношениях?", options: ["Валлахи", "Скубиду", "Компот"], correct: 0 },
+            { q: "Куда мы хотим улететь?", options: ["Пакистан", "Вьетнам", "Сингапур"], correct: 1 },
+            { q: "На что я хочу сдать летом?", options: ["На права", "Нахуй", "На владение частной компанией"], correct: 0 },
+            { q: "Кого я люблю больше всего?", options: ["Бобров", "Котов", "Собак"], correct: 1 },
+            { q: "Кого я люблю всей душой?", options: ["Полину", "Полину", "Полину"], correct: 0 }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function renderQuestion() {
+            if (currentQuestion >= questions.length) {
+                showResult();
+                return;
+            }
+            const q = questions[currentQuestion];
+            document.getElementById('quizProgress').innerText = `Вопрос ${currentQuestion + 1} из 10`;
+            document.getElementById('quizQuestion').innerText = q.q;
+            const optionsDiv = document.getElementById('quizOptions');
+            optionsDiv.innerHTML = '';
+            q.options.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-option';
+                btn.innerText = opt;
+                btn.onclick = () => checkAnswer(index, btn);
+                optionsDiv.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedIndex, btnElement) {
+            const allBtns = document.querySelectorAll('.quiz-option');
+            allBtns.forEach(b => b.style.pointerEvents = 'none');
+
+            const isLastQuestion = currentQuestion === 9;
+            const isCorrect = isLastQuestion || (selectedIndex === questions[currentQuestion].correct);
+
+            if (isCorrect) {
+                score++;
+                btnElement.classList.add('correct');
+                createFloatingElement('heart');
+            } else {
+                btnElement.classList.add('wrong');
+                createFloatingElement('broken-heart');
+                allBtns[questions[currentQuestion].correct].classList.add('correct');
+            }
+            setTimeout(() => {
+                currentQuestion++;
+                renderQuestion();
+            }, 1200);
+        }
+
+        function showResult() {
+            const quizSection = document.getElementById('quizSection');
+            const resultSection = document.getElementById('resultSection');
+            let title = "", text = "";
+            if (score >= 1 && score <= 3) {
+                title = "Ой..."; text = "Мы же встречаемся 1 год и 6 месяцев 😔";
+            } else if (score >= 4 && score <= 6) {
+                title = "Неплохо!"; text = "Ты знаешь меня, но есть куда стремиться. Давай общаться еще больше! 💕";
+            } else if (score >= 7 && score <= 9) {
+                title = "Вау!"; text = "Ты очень хорошо меня знаешь! Я приятно удивлен. 😍";
+            } else if (score === 10) {
+                title = "Идеально!"; text = "Я и не сомневался в своей любимке ❤️";
+            }
+            document.getElementById('resultTitle').innerText = title;
+            document.getElementById('resultText').innerHTML = text + `<br><br><span style="font-size:1.2em; color:#c0392b; font-weight:bold;">Твой результат: ${score} из 10</span>`;
+            quizSection.style.opacity = '0';
+            setTimeout(() => {
+                quizSection.style.display = 'none';
+                resultSection.style.display = 'flex';
+                setTimeout(() => resultSection.classList.add('show'), 50);
+                for(let i=0; i<20; i++) setTimeout(() => createFloatingElement('heart'), i*100);
+            }, 800);
+        }
+
+        // === ТАЙМЕР ЛЮБВИ ===
+        function startLoveTimer() {
+            const startDate = new Date(2025, 3, 1, 0, 0, 0).getTime();
+
+            function updateTimer() {
+                const now = new Date().getTime();
+                const distance = now - startDate;
+
+                if (distance < 0) return;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+            }
+
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        function showTimerSection() {
+            const resultSection = document.getElementById('resultSection');
+            resultSection.style.opacity = '0';
+            setTimeout(() => {
+                resultSection.style.display = 'none';
+                const timerSection = document.getElementById('timerSection');
+                timerSection.style.display = 'flex';
+                setTimeout(() => timerSection.classList.add('show'), 50);
+                startLoveTimer();
+            }, 800);
+        }
+
+        function createFloatingElement(type) {
+            const container = document.getElementById('hearts-container');
+            if (!container) return;
+            const el = document.createElement('div');
+            if (type === 'heart') {
+                el.classList.add('heart');
+                const colors = ['#e74c3c', '#ff6b81', '#ff4757', '#ffa502', '#ff7f50'];
+                el.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            } else {
+                el.classList.add('broken-heart');
+            }
+            el.style.left = `${Math.random() * 80 + 10}vw`;
+            const size = Math.random() * 15 + 15;
+            el.style.width = `${size}px`;
+            el.style.height = `${size}px`;
+            el.style.animationDuration = `${Math.random() * 1 + 1.5}s`;
+            container.appendChild(el);
+            setTimeout(() => el.remove(), 3000);
+        }
+    </script>
+</body>
+</html>
